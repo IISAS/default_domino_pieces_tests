@@ -1,0 +1,72 @@
+{
+    "SimpleLogPiece": {
+        "name": "SimpleLogPiece",
+        "dependency": {
+            "dockerfile": "",
+            "requirements_file": "requirements_0.txt"
+        },
+        "tags": [
+            "Example"
+        ],
+        "style": {
+            "node_label": "Example Piece",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#b3cde8"
+            },
+            "useIcon": true,
+            "icon_class_name": "fas fa-database",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "some description",
+        "input_schema": {
+            "title": "InputModel",
+            "description": "Example Operator",
+            "type": "object",
+            "properties": {
+                "input_arg_1": {
+                    "title": "Input Arg 1",
+                    "description": "description",
+                    "default": "default",
+                    "type": "string"
+                }
+            }
+        },
+        "output_schema": {
+            "title": "OutputModel",
+            "description": "Example Operator",
+            "type": "object",
+            "properties": {
+                "message": {
+                    "title": "Message",
+                    "description": "Output message to log",
+                    "default": "",
+                    "type": "string"
+                },
+                "output_arg_1": {
+                    "title": "Output Arg 1",
+                    "description": "description",
+                    "default": "default",
+                    "type": "string"
+                }
+            }
+        },
+        "secrets_schema": {
+            "title": "SecretsModel",
+            "description": "Example Operator Secrets",
+            "type": "object",
+            "properties": {
+                "EXAMPLE_VAR": {
+                    "title": "Example Var",
+                    "description": "Example secret var",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "EXAMPLE_VAR"
+            ]
+        }
+    }
+}

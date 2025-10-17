@@ -3,6 +3,7 @@ from .models import InputModel, OutputModel
 import time
 from pathlib import Path
 
+
 class SimpleLogPiece(BasePiece):
 
     def piece_function(self, input_model: InputModel):

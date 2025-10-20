@@ -5,8 +5,8 @@ REGISTRY_NAME = "iisas"
 
 # The name of this Pieces repository
 REPOSITORY_NAME = "default_domino_pieces_tests"
-REPOSITORY_LABEL = "Default Pieces Repository"
+REPOSITORY_LABEL = "Default Pieces Repository (forked by IISAS)"
 
 # The version of this Pieces release
 # Attention: changing this will create a new release 
-VERSION = "0.0.8"
+VERSION = "0.0.9"
